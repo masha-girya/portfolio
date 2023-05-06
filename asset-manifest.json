@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d9affa82.css",
-    "main.js": "/portfolio/static/js/main.9861e3cd.js",
+    "main.js": "/portfolio/static/js/main.a57e4c92.js",
     "static/media/MavenPro-SemiBold.ttf": "/portfolio/static/media/MavenPro-SemiBold.b059e202b36b97f8436b.ttf",
     "static/media/MavenPro-Bold.ttf": "/portfolio/static/media/MavenPro-Bold.830435f11f7b346a5678.ttf",
     "static/media/MavenPro-Medium.ttf": "/portfolio/static/media/MavenPro-Medium.b598aa7064bdbdbc8b25.ttf",
@@ -12,10 +12,10 @@
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
     "main.d9affa82.css.map": "/portfolio/static/css/main.d9affa82.css.map",
-    "main.9861e3cd.js.map": "/portfolio/static/js/main.9861e3cd.js.map"
+    "main.a57e4c92.js.map": "/portfolio/static/js/main.a57e4c92.js.map"
   },
   "entrypoints": [
     "static/css/main.d9affa82.css",
-    "static/js/main.9861e3cd.js"
+    "static/js/main.a57e4c92.js"
   ]
 }
