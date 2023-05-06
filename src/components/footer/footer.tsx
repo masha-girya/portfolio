@@ -20,7 +20,7 @@ export const Footer = () => {
             </h5>
           </div>
 
-          <div>
+          <div className="footer__contacts">
             <h3 className="footer__title">Contacts</h3>
             <SideSection isFooter />
           </div>

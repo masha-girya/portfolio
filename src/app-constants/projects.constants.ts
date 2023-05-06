@@ -38,7 +38,7 @@ export const PROJECTS_CONSTANTS: IProject[] = [
   },
   {
     name: 'Todo Application',
-    description: 'Minimalistic planner where authorized user can manage one`s tasks. It t simple but works with no bugs. My friends use this app for managing their days',
+    description: 'Minimalistic planner where authorized user can manage one`s tasks. It is simple and works with no bugs. My friends use this app for managing their days',
     parts: 'Part: Frontend',
     time: 'Time: 10 days',
     linkWeb: PROJECTS_LINKS.TODO_DEMO,

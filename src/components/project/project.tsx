@@ -31,8 +31,6 @@ export const Project = ({ project }: IProps) => {
 
   return (
     <div className="project">
-      <div className="project__box project__box--border" />
-
       <article className="project__box">
         <h1 className="project__title">{name}</h1>
 

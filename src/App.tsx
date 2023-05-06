@@ -12,13 +12,15 @@ function App() {
   return (
     <div className="App">
       <header className="App__header">
-        <h1 className="App__title">Hey, I am Maria Girya!</h1>
-        <h5 className="App__subtitle">
-          A Fullstack Web developer from Brave Ukraine
-        </h5>
-        <h5 className="App__subtitle">
-          Focused on build user-friendly and high-quality websites
-        </h5>
+        <div className="App__header-box">
+          <h1 className="App__title">Hey, I am Maria Girya!</h1>
+          <h5 className="App__subtitle">
+            A Fullstack Web developer from Brave Ukraine
+          </h5>
+          <h5 className="App__subtitle">
+            Focused on build user-friendly and high-quality websites
+          </h5>
+        </div>
 
         <a href="#portfolio">
           <button className="App__button" type="button">

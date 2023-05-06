@@ -23,5 +23,9 @@
     &:hover {
       @include mixins.iconHover();
     }
+
+    @media (max-width: 490px) {
+      font-size: 14px;
+    }
   }
 }
