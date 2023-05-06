@@ -22,7 +22,7 @@ function App() {
           </h5>
         </div>
 
-        <a href="#portfolio">
+        <a href="#portfolio" className="App__button--link">
           <button className="App__button" type="button">
             Portfolio
           </button>

@@ -7,6 +7,7 @@
   bottom: 70px;
   left: 94%;
 
+  width: 45px;
   height: 45px;
 
   border: 3px dotted var.$color-background;
@@ -21,6 +22,7 @@
 
   @media (max-width: 769px) {
     height: 35px;
+    width: 35px;
 
     font-size: 40px;
     line-height: 40px;
