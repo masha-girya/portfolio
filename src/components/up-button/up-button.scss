@@ -1,0 +1,27 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as var;
+
+.up-button {
+  position: sticky;
+  z-index: var.$index-main;
+  bottom: 70px;
+  left: 95%;
+
+  height: 45px;
+
+  border: 3px dotted var.$color-background;
+  background-color: var.$color-contrast;
+
+  @include mixins.fontSubtitle();
+  font-size: 60px;
+  color: var.$color-background;
+  line-height: 62px;
+
+  transition: all .3s;
+
+  &:hover {
+  border-color: var.$color-contrast;
+  background-color: var.$color-background;
+  color: var.$color-contrast;
+  }
+}

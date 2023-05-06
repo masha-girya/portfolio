@@ -1,0 +1,47 @@
+@use '../../styles/variables' as var;
+@use '../../styles/mixins';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: var.$index-header;
+  top: 0;
+
+  margin-top: 215px;
+  padding: 10px 0;
+
+  @include mixins.background(315deg, var.$color-text, 5%);
+
+  &__link {
+    position: relative;
+    padding: 5px;
+    margin: 0 auto;
+
+    transition: all .3s;
+
+    &:hover {
+      @include mixins.animationHover2("", var.$color-text, var.$color-contrast);
+      @include mixins.iconHover();
+    }
+  }
+
+  &--footer {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 0;
+    background: none;
+
+    &__link {
+      padding-left: 0px;
+      padding-right: 10px;
+
+      &:hover {
+        @include mixins.animationHover2("", var.$color-contrast, var.$color-text);
+      }
+    }
+  }
+}

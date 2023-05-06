@@ -1,0 +1,124 @@
+@use './variables' as var;
+
+@mixin fontTitle {
+  font-family: var.$font-family;
+  font-weight: var.$font-weight-bold;
+  font-size: 64px;
+}
+
+@mixin fontSubtitle {
+  font-family: var.$font-family;
+  font-weight: var.$font-weight-semi-bold;
+  font-size: 30px;
+}
+
+@mixin fontDescription {
+  font-family: var.$font-family;
+  font-weight: var.$font-weight-medium;
+  font-size: 16px;
+}
+
+@mixin fontText {
+  font-family: var.$font-family;
+  font-weight: var.$font-weight-regular;
+  font-size: 16px;
+}
+
+@mixin background($degrees, $color, $transparent) {
+  background: linear-gradient($degrees, transparent $transparent, $color 5%);
+}
+
+@mixin placeItems($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin animationHover($content) {
+  &::after {
+    content: $content;
+
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(45deg, transparent 3%, var.$color-text 3%, var.$color-text 5%, var.$color-contrast 5%);
+    text-shadow: -3px -3px 0px var.$color-contrast, 3px 3px 0px var.$color-text;
+    clip-path: var.$slice-0;
+  }
+
+   &:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+   }
+}
+
+@mixin animationHover2($content, $main-color, $color) {
+  &::after {
+    content: $content;
+
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(45deg, transparent 3%, $color 3%, $color 5%, $main-color 5%);
+    text-shadow: -3px -3px 0px $main-color, 3px 3px 0px $color;
+    clip-path: var.$slice-0;
+  }
+
+   &:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+   }
+}
+
+@mixin iconHover() {
+  animation: hover-tech .75s linear 1;
+}
+
+@keyframes hover-tech {
+  10% {
+    transform: translateX(3px);
+  }
+  20% {
+    transform: translateX(-3px);
+  }
+  30% {
+    transform: translateX(3px);
+  }
+  40% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+

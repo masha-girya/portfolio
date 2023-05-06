@@ -1,0 +1,51 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as var;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var.$index-footer;
+
+  margin-top: 200px;
+
+  @include mixins.placeItems(center, center);
+  flex-direction: column;
+
+  width: 100%;
+
+  @include mixins.background(135deg, var.$color-contrast, 10%);
+
+  &__box {
+    max-width: 80%;
+  }
+
+  &__info {
+    margin-top: 30px;
+    @include mixins.placeItems(space-between, flex-start);
+    column-gap: 200px;
+  }
+
+  &__title {
+    @include mixins.fontTitle();
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+    @include mixins.fontDescription();
+  }
+
+  &__copyright {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include mixins.fontText();
+  }
+
+  &__link {
+    font-weight: var.$font-weight-semi-bold;
+    border-bottom: 2px solid var.$color-background;
+  }
+}

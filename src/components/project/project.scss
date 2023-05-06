@@ -1,0 +1,95 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as var;
+
+.project {
+  position: relative;
+  display: flex;
+
+  &__box {
+    margin: 0 20px;
+    width: 45%;
+    height: 200px;
+    padding: 20px;
+    padding-left: 50px;
+
+    border: 1px dotted var.$color-contrast;
+    color: var.$color-text;
+
+    transition: all .3s;
+
+    &--border {
+      position: absolute;
+      z-index: 0;
+      top: -10px;
+      left: 10px;
+
+      &:hover {
+        transform: translate(20px, -20px);
+      }
+    }
+  }
+
+  &__title {
+    @include mixins.fontSubtitle();
+    font-size: 30px;
+  }
+
+  &__description {
+    margin-top: 10px;
+
+    @include mixins.fontText();
+    line-height: 18px;
+  }
+
+  &__cafe-text {
+    @include mixins.fontText();
+  }
+
+  &__tech {
+    @include mixins.placeItems(space-between, flex-start);
+    flex-direction: column;
+
+    margin-left: 30px;
+    width: 500px;
+  }
+
+  &__links {
+    position: relative;
+
+    @include mixins.placeItems(space-between, center);
+
+    width: 100%;
+  }
+
+  &__link {
+    position: relative;
+    @include mixins.fontSubtitle();
+    color: var.$color-contrast;
+    line-height: 45px;
+
+    border-bottom: 1px solid var.$color-contrast;
+
+    transition: all .2s;
+
+    &--underline {
+      background-color: var.$color-contrast;
+      width: 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 700ms ease-in-out;
+      display: inline-block;
+    }
+
+    &:hover &--underline {
+      width: 100%;
+    }
+
+    &:hover {
+      color: var.$color-background;
+      border-bottom: 1px dotted var.$color-contrast;
+    }
+  }
+}

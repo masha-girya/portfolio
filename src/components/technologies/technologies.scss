@@ -1,0 +1,27 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as var;
+
+.technology {
+  @include mixins.placeItems(flex-start, flex-start);
+  flex-wrap: wrap;
+  gap: 10px;
+
+  max-width: 500px;
+  height: max-content;
+
+  &__item {
+    position: relative;
+  
+    padding: 10px;
+    @include mixins.background(315deg, var.$color-text, 5%);
+  
+    @include mixins.fontDescription();
+    color: var.$color-background;
+  
+    cursor: auto;
+  
+    &:hover {
+      @include mixins.iconHover();
+    }
+  }
+}
