@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.99660cb7.css",
-    "main.js": "/portfolio/static/js/main.471aa8a1.js",
+    "main.css": "/portfolio/static/css/main.f6b3a897.css",
+    "main.js": "/portfolio/static/js/main.845c8b6a.js",
     "static/media/MavenPro-SemiBold.ttf": "/portfolio/static/media/MavenPro-SemiBold.b059e202b36b97f8436b.ttf",
     "static/media/MavenPro-Bold.ttf": "/portfolio/static/media/MavenPro-Bold.830435f11f7b346a5678.ttf",
     "static/media/MavenPro-Medium.ttf": "/portfolio/static/media/MavenPro-Medium.b598aa7064bdbdbc8b25.ttf",
@@ -11,11 +11,11 @@
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.61699742f017b006645f1fb8d6928391.svg",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
-    "main.99660cb7.css.map": "/portfolio/static/css/main.99660cb7.css.map",
-    "main.471aa8a1.js.map": "/portfolio/static/js/main.471aa8a1.js.map"
+    "main.f6b3a897.css.map": "/portfolio/static/css/main.f6b3a897.css.map",
+    "main.845c8b6a.js.map": "/portfolio/static/js/main.845c8b6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.99660cb7.css",
-    "static/js/main.471aa8a1.js"
+    "static/css/main.f6b3a897.css",
+    "static/js/main.845c8b6a.js"
   ]
 }
