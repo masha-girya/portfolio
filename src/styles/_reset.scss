@@ -1,0 +1,51 @@
+@use './variables' as var;
+@use './mixins';
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 400;
+  font-size: 16px;
+  src: url(../assets/fonts/MavenPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 500;
+  src: url(../assets/fonts/MavenPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 600;
+  src: url(../assets/fonts/MavenPro-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  font-weight: 700;
+  src: url(../assets/fonts/MavenPro-Bold.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var.$color-background;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var.$color-background;
+}
