@@ -63,6 +63,7 @@
 
     @include mixins.fontSubtitle();
     text-transform: uppercase;
+    color: var.$color-background;
 
     @include mixins.background(45deg, var.$color-contrast, 5%);
 

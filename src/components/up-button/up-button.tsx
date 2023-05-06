@@ -12,7 +12,7 @@ export const UpButton = () => {
       className="up-button"
       onClick={handleClick}
     >
-      <span>^</span>
+      <span className="uop-button__arrow">^</span>
     </button>
   );
 };
