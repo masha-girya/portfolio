@@ -30,12 +30,22 @@
   }
 
   @media (max-width: 490px) {
-    left: 90%;
+    left: 88%;
   }
 
   &:hover {
     border-color: var.$color-contrast;
     background-color: var.$color-background;
     color: var.$color-contrast;
+  }
+
+  &__arrow {
+    width: 45px;
+    height: 45px;
+
+    @media (max-width: 769px) {
+      height: 35px;
+      width: 35px;
+    }
   }
 }
