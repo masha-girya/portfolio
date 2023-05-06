@@ -2,7 +2,6 @@
 @use './styles/variables' as var;
 
 .App {
-
   &__header {
     position: relative;
     z-index: var.$index-header;
@@ -14,17 +13,46 @@
     height: 100vh;
   }
 
+  &__header-box {
+    @include mixins.placeItems(center, center);
+    flex-direction: column;
+
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      max-width: 85%;
+    }
+
+    @media (max-width: 490px) {
+      margin-top: 75px;
+    }
+  }
+
   &__title {
     margin: 0 30px;
 
     @include mixins.fontTitle();
     text-transform: uppercase;
     color: var.$color-contrast;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+
+    @media (max-width: 490px) {
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
   }
 
   &__subtitle {
     @include mixins.fontSubtitle();
     color: var.$color-text;
+
+    @media (max-width: 490px) {
+      font-size: 20px;
+    }
   }
 
   &__button {
@@ -39,9 +67,20 @@
     @include mixins.background(45deg, var.$color-contrast, 5%);
 
     @include mixins.animationHover("PORTFOLIO");
+
+    @media (max-width: 1024px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 490px) {
+      margin-top: 75px;
+      padding: 15px;
+      font-size: 20px;
+    }
   }
 
   &__main {
+    box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
     position: sticky;
     z-index: var.$index-main;
     top: 0;
@@ -51,10 +90,21 @@
     row-gap: 200px;
 
     margin-bottom: 250px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 50px;
 
     background-color: var.$color-background;
+
+    @media (max-width: 769px) {
+      margin-bottom: 350px;
+    }
+
+    @media (max-width: 490px) {
+      row-gap: 150px;
+    }
+
+    @media (max-width: 320px) {
+      padding: 100px 20px;
+    }
   }
 }
 

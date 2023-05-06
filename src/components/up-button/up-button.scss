@@ -5,7 +5,7 @@
   position: sticky;
   z-index: var.$index-main;
   bottom: 70px;
-  left: 95%;
+  left: 94%;
 
   height: 45px;
 
@@ -19,9 +19,21 @@
 
   transition: all .3s;
 
+  @media (max-width: 769px) {
+    height: 35px;
+
+    font-size: 40px;
+    line-height: 40px;
+    left: 92%;
+  }
+
+  @media (max-width: 490px) {
+    left: 90%;
+  }
+
   &:hover {
-  border-color: var.$color-contrast;
-  background-color: var.$color-background;
-  color: var.$color-contrast;
+    border-color: var.$color-contrast;
+    background-color: var.$color-background;
+    color: var.$color-contrast;
   }
 }
