@@ -5,10 +5,12 @@
   position: sticky;
   z-index: var.$index-main;
   bottom: 70px;
-  left: 94%;
+  left: 100%;
+
 
   @include mixins.placeItems(center, center);
 
+  margin-right: 10px;
   width: 45px;
   height: 45px;
 
@@ -23,11 +25,6 @@
 
     font-size: 40px;
     line-height: 40px;
-    left: 92%;
-  }
-
-  @media (max-width: 490px) {
-    left: 88%;
   }
 
   &:hover {
