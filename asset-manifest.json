@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d9affa82.css",
-    "main.js": "/portfolio/static/js/main.a57e4c92.js",
+    "main.css": "/portfolio/static/css/main.b27a558a.css",
+    "main.js": "/portfolio/static/js/main.f497fc7e.js",
     "static/media/MavenPro-SemiBold.ttf": "/portfolio/static/media/MavenPro-SemiBold.b059e202b36b97f8436b.ttf",
     "static/media/MavenPro-Bold.ttf": "/portfolio/static/media/MavenPro-Bold.830435f11f7b346a5678.ttf",
     "static/media/MavenPro-Medium.ttf": "/portfolio/static/media/MavenPro-Medium.b598aa7064bdbdbc8b25.ttf",
@@ -11,11 +11,12 @@
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.61699742f017b006645f1fb8d6928391.svg",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
-    "main.d9affa82.css.map": "/portfolio/static/css/main.d9affa82.css.map",
-    "main.a57e4c92.js.map": "/portfolio/static/js/main.a57e4c92.js.map"
+    "static/media/arrow.svg": "/portfolio/static/media/arrow.24aa4e168ed85feeca8d3f944408f2db.svg",
+    "main.b27a558a.css.map": "/portfolio/static/css/main.b27a558a.css.map",
+    "main.f497fc7e.js.map": "/portfolio/static/js/main.f497fc7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9affa82.css",
-    "static/js/main.a57e4c92.js"
+    "static/css/main.b27a558a.css",
+    "static/js/main.f497fc7e.js"
   ]
 }
