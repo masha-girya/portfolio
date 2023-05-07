@@ -7,8 +7,9 @@
   bottom: 70px;
   left: 100%;
 
-
   @include mixins.placeItems(center, center);
+  font-size: 0;
+  padding: 0;
 
   margin-right: 10px;
   width: 45px;
@@ -22,9 +23,6 @@
   @media (max-width: 769px) {
     height: 35px;
     width: 35px;
-
-    font-size: 40px;
-    line-height: 40px;
   }
 
   &:hover {
