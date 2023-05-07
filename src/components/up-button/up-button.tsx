@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import { Icon } from '../icon';
 import './up-button.scss';
 
 export const UpButton = () => {
@@ -12,7 +13,7 @@ export const UpButton = () => {
       className="up-button"
       onClick={handleClick}
     >
-      <p className="uop-button__arrow">^</p>
+      <Icon type="arrow" />
     </button>
   );
 };

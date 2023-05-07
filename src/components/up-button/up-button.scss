@@ -7,16 +7,13 @@
   bottom: 70px;
   left: 94%;
 
+  @include mixins.placeItems(center, center);
+
   width: 45px;
   height: 45px;
 
   border: 3px dotted var.$color-background;
   background-color: var.$color-contrast;
-
-  @include mixins.fontSubtitle();
-  font-size: 60px;
-  color: var.$color-background;
-  line-height: 62px;
 
   transition: all .3s;
 
@@ -37,15 +34,9 @@
     border-color: var.$color-contrast;
     background-color: var.$color-background;
     color: var.$color-contrast;
-  }
 
-  &__arrow {
-    width: 45px;
-    height: 45px;
-
-    @media (max-width: 769px) {
-      height: 35px;
-      width: 35px;
+    & path {
+      fill: var.$color-contrast;
     }
   }
 }
