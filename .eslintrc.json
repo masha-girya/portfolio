@@ -12,6 +12,8 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "aria-label": 0,
+    "control-has-associated-label": 0
   }
 }

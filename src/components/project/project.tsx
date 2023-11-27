@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-import React, { useMemo } from 'react';
 import { IProject } from '../../types';
 import { Technologies } from '../technologies';
 import './project.scss';
@@ -19,32 +18,25 @@ export const Project = ({ project }: IProps) => {
     technologies,
   } = project;
 
-  const descriptionToShow = useMemo(() => {
-    const index = description.indexOf('.');
-    const newDescription = [
-      description.slice(0, index),
-      description.slice(index + 1),
-    ];
-
-    return newDescription;
-  }, []);
-
   return (
     <div className="project">
       <article className="project__box">
-        <h1 className="project__title">{name}</h1>
+        <h3 className="project__title">{name}</h3>
 
-        <h4 className="project__description">
-          {descriptionToShow[0]}
-          <br />
-          {descriptionToShow[1]}
-        </h4>
+        <div className="project__descriptionList">
+          {description.map(desc => (
+            <h4 className="project__descriptionList__part">
+              {desc}
+            </h4>
+          ))}
+        </div>
 
         <div>
-          <h4 className="project__description">
-            {parts}
-          </h4>
-
+          {parts.split('.').map(part => (
+            <h4 key={part} className="project__description">
+              {part}
+            </h4>
+          ))}
           <h4 className="project__description">
             {time}
           </h4>
@@ -55,25 +47,29 @@ export const Project = ({ project }: IProps) => {
         <Technologies technologies={technologies} />
 
         <div className="project__links">
-          <a
-            className="project__link"
-            href={linkWeb}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Visit WebPage</span>
-            <span className="project__link--underline" />
-          </a>
+          {linkWeb.length > 0 && (
+            <a
+              className="project__link"
+              href={linkWeb}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Visit WebPage</span>
+              <span className="project__link--underline" />
+            </a>
+          )}
 
-          <a
-            className="project__link"
-            href={linkGit}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Github</span>
-            <span className="project__link--underline" />
-          </a>
+          {linkGit.length > 0 && (
+            <a
+              className="project__link"
+              href={linkGit}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Github</span>
+              <span className="project__link--underline" />
+            </a>
+          )}
         </div>
       </div>
     </div>

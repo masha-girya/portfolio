@@ -29,10 +29,7 @@ export const Footer = () => {
           <p className="footer__copyright">
             © Copyright 2023. Made by
             {' '}
-            <a
-              href={PROJECTS_LINKS.PORTFOLIO}
-              className="footer__link"
-            >
+            <a href={PROJECTS_LINKS.PORTFOLIO} className="footer__link">
               Maria Girya
             </a>
           </p>

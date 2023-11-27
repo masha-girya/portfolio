@@ -18,7 +18,7 @@
     @include mixins.fontDescription();
     color: var.$color-background;
   
-    cursor: auto;
+    cursor: default;
   
     &:hover {
       @include mixins.iconHover();

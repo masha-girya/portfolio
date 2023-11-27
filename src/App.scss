@@ -55,6 +55,11 @@
     }
   }
 
+  &__links {
+    display: flex;
+    gap: 20px;
+  }
+
   &__button {
     position: relative;
 
@@ -79,13 +84,17 @@
       font-size: 20px;
     }
 
+    &--resume {
+      @include mixins.background(-135deg, var.$color-contrast, 5%);
+    }
+
     &--link {
       color: var.$color-background;
     }
   }
 
   &__main {
-    box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px 0px var.$color-background;
     position: sticky;
     z-index: var.$index-main;
     top: 0;
@@ -104,10 +113,7 @@
     }
 
     @media (max-width: 490px) {
-      row-gap: 150px;
-    }
-
-    @media (max-width: 320px) {
+      row-gap: 90px;
       padding: 100px 20px;
     }
   }

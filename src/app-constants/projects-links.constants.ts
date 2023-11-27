@@ -1,5 +1,8 @@
 /* eslint-disable max-len */
 export const PROJECTS_LINKS_CONSTANTS = {
+  SPUNCH_WEB: 'https://spunch.agency',
+  IXNOME_LANDING: 'https://ixnome.com',
+  IXNOME_APP: 'https://app.ixnome.com/sign-in',
   CAFE_DEMO: 'https://masha-girya.github.io/codempire-cafe/#/home/dishes',
   CAFE_GITHUB: 'https://github.com/masha-girya/codempire-cafe',
   PHONE_DEMO: 'https://fe-sep22-fulfilled.github.io/frontend/#/',

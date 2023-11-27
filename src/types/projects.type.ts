@@ -1,6 +1,6 @@
 export interface IProject {
   name: string,
-  description: string,
+  description: string[],
   parts: string,
   time: string,
   linkWeb: string,

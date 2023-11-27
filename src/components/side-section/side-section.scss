@@ -18,9 +18,11 @@
   }
 
   @media (max-width: 490px) {
+    background-color: var.$color-text;
     top: 0;
     flex-direction: row;
     padding: 0 10px;
+    width: 100%;
   }
 
   &__link {

@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { ReactComponent as Github } from '../../assets/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../assets/icons/linkedin.svg';
 import { ReactComponent as Gmail } from '../../assets/icons/gmail.svg';
