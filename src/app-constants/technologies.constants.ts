@@ -1,4 +1,15 @@
 export const TECHNOLOGIES_CONSTANTS = {
+  LR_WEB: [
+    'React',
+    'Next.js',
+    'Typescript',
+    'SCSS Modules',
+    'HTML',
+    'Wagtail API, Admin',
+    'Swiper',
+    'React Parallax',
+    'React Transitions',
+  ],
   SPUNCH_WEB: [
     'React',
     'Next.js',

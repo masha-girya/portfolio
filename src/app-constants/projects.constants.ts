@@ -35,6 +35,15 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkGit: '',
     technologies: TECHNOLOGIES.SPUNCH_WEB,
   },
+  {
+    name: 'Lonely Rabbit',
+    description: ['A corporate website for game-dev company. Main idea was to present company within their horror game "Midnight Strikes". Via this website user can also apply to vacancy or contact company as a customer.'],
+    parts: 'Part: Frontend (as a frontend developer in SPUNCH agency). Implementations: layout from scratch, swiper animations, form requests (unable on Demo)',
+    time: 'Time: 1 month',
+    linkWeb: PROJECTS_LINKS.LR_WEB,
+    linkGit: '',
+    technologies: TECHNOLOGIES.LR_WEB,
+  },
   // {
   //   name: 'Cafe Website',
   //   description: ['Web Application with authentication, admin mode, ability to order products, and pay for order by crypto.', 'You can see how as non-authorized user all products, but for ordering you should sing up.', 'Now it is only available to run locally because I am working on a deploy, thank you for understanding :)'],
