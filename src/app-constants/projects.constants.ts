@@ -44,6 +44,15 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkGit: '',
     technologies: TECHNOLOGIES.LR_WEB,
   },
+  {
+    name: 'EvoPlay Landing',
+    description: ['A landing page for a company that provides AI-driven solutions for businesses. Simple, elegant, with a few animations based on scroll.'],
+    parts: 'Part: Frontend (as a frontend developer in SPUNCH agency). Implementations: layout from scratch, animations, form requests (unable on Demo)',
+    time: 'Time: 0.5 month',
+    linkWeb: PROJECTS_LINKS.EVO_LANDING,
+    linkGit: '',
+    technologies: TECHNOLOGIES.EVO_LANDING,
+  },
   // {
   //   name: 'Cafe Website',
   //   description: ['Web Application with authentication, admin mode, ability to order products, and pay for order by crypto.', 'You can see how as non-authorized user all products, but for ordering you should sing up.', 'Now it is only available to run locally because I am working on a deploy, thank you for understanding :)'],

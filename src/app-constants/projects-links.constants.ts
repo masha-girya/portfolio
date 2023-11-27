@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 export const PROJECTS_LINKS_CONSTANTS = {
+  EVO_LANDING: 'https://evoplay-landong-spunch-agency.vercel.app/',
   LR_WEB: 'https://lonely-rabbit-spunch-agency.vercel.app/',
   SPUNCH_WEB: 'https://spunch.agency',
   IXNOME_LANDING: 'https://ixnome.com',

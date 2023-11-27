@@ -1,4 +1,11 @@
 export const TECHNOLOGIES_CONSTANTS = {
+  EVO_LANDING: [
+    'React',
+    'Next.js',
+    'Typescript',
+    'SCSS Modules',
+    'HTML',
+  ],
   LR_WEB: [
     'React',
     'Next.js',
