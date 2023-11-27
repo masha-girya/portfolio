@@ -8,6 +8,7 @@ export const UpButton = () => {
   }, []);
 
   return (
+    // eslint-disable-next-line jsx-a11y/control-has-associated-label
     <button
       type="button"
       className="up-button"
