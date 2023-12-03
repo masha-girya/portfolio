@@ -6,4 +6,8 @@ export interface IProject {
   linkWeb: string,
   linkGit: string,
   technologies: readonly string[],
+  background: string,
+  slug: string,
+  isLight?: boolean,
+  gif: { gif: any, title: string }[],
 }

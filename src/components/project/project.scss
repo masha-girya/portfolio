@@ -2,26 +2,37 @@
 @use '../../styles/variables' as var;
 
 .project {
-  position: relative;
+  // position: sticky;
+  top: 0;
   display: flex;
-
-  @media (max-width: 769px) {
-    display: block;
+  // height: 100vh;
+  // padding: 0 50px;
+  
+  &__static {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    height: max-content;
+  
+    @media (max-width: 769px) {
+      display: block;
+    }
   }
 
   &__box {
     position: relative;
     margin: 0 20px;
-    width: 45%;
+    width: 50%;
     min-height: 200px;
+    height: max-content;
     padding: 30px 50px;
 
     border: 1px dotted var.$color-contrast;
     color: var.$color-text;
 
     @media (max-width: 769px) {
-      width: 80%;
-      margin-bottom: 40px;
+      width: 100%;
+      margin-bottom: 55px;
       margin-left: 0;
     }
 
@@ -87,7 +98,7 @@
     flex-direction: column;
 
     margin-left: 30px;
-    width: 500px;
+    width: 40%;
 
     @media (max-width: 769px) {
       width: 100%;
@@ -103,7 +114,7 @@
     width: 100%;
 
     @media (max-width: 769px) {
-      margin-top: 40px;
+      margin-top: 55px;
     }
   }
 

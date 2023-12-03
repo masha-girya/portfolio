@@ -1,0 +1,26 @@
+@use '../../styles/variables' as var;
+@use '../../styles/mixins';
+
+.project-page {
+  &__container {
+    padding: 50px;
+  }
+
+  &__name {
+    color: var.$color-text;
+    @include mixins.fontTitle();
+    // font-size: 40px;
+    letter-spacing: .5px;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+}
+
+.swiper {
+  width: 800px;
+
+  &__slide {
+    width: 800px;
+  }
+}

@@ -6,6 +6,18 @@ import {
   PROJECTS_LINKS_CONSTANTS as PROJECTS_LINKS,
 } from './projects-links.constants';
 import { IProject } from '../types';
+import IXNOMEWebImg from '../assets/IXNOME-web.png';
+import IXNOMELandingImg from '../assets/IXNOME-Landing.png';
+import LonelyRabbit from '../assets/LonelyRabbit.png';
+import EvoPlayImg from '../assets/Evo-Play.png';
+import PhonesImg from '../assets/Phones.png';
+import SpunchImg from '../assets/Spunch2.png';
+import ChuckNorrisImg from '../assets/ChuckNorris.png';
+import ToDoAppImg from '../assets/ToDoApp.png';
+import IxnomeGif1 from '../assets/ixnome-web/subscriptions.gif';
+import IxnomeGif3 from '../assets/ixnome-web/trading-inner.gif';
+import IxnomeGif2 from '../assets/ixnome-web/slider.gif';
+import IxnomeGif4 from '../assets/ixnome-web/tutorial.gif';
 
 export const PROJECTS_CONSTANTS: IProject[] = [
   {
@@ -16,6 +28,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.IXNOME_APP,
     linkGit: '',
     technologies: TECHNOLOGIES.IXNOME_APP,
+    background: IXNOMEWebImg,
+    slug: 'ixnome-web-app',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   {
     name: 'IXNOME Landing Page',
@@ -25,6 +57,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.IXNOME_LANDING,
     linkGit: '',
     technologies: TECHNOLOGIES.IXNOME_LANDING,
+    background: IXNOMELandingImg,
+    slug: 'ixnome-landing',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   {
     name: 'SPUNCH Agency Website',
@@ -34,6 +86,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.SPUNCH_WEB,
     linkGit: '',
     technologies: TECHNOLOGIES.SPUNCH_WEB,
+    background: SpunchImg,
+    slug: 'spunch',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   {
     name: 'Lonely Rabbit',
@@ -43,6 +115,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.LR_WEB,
     linkGit: '',
     technologies: TECHNOLOGIES.LR_WEB,
+    background: LonelyRabbit,
+    slug: 'lonely-rabbit',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   {
     name: 'EvoPlay Landing',
@@ -52,6 +144,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.EVO_LANDING,
     linkGit: '',
     technologies: TECHNOLOGIES.EVO_LANDING,
+    background: EvoPlayImg,
+    slug: 'evo-play',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   // {
   //   name: 'Cafe Website',
@@ -70,6 +182,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.PHONE_DEMO,
     linkGit: PROJECTS_LINKS.PHONE_GITHUB,
     technologies: TECHNOLOGIES.PHONES,
+    background: PhonesImg,
+    slug: 'phones-store',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   {
     name: 'Chuck Norris Jokes App',
@@ -79,6 +211,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.CHUCK_DEMO,
     linkGit: PROJECTS_LINKS.CHUCK_GITHUB,
     technologies: TECHNOLOGIES.PHONES,
+    background: ChuckNorrisImg,
+    slug: 'chuck-norris-jokes',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   {
     name: 'Todo Application',
@@ -88,6 +240,26 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     linkWeb: PROJECTS_LINKS.TODO_DEMO,
     linkGit: PROJECTS_LINKS.TODO_GITHUB,
     technologies: TECHNOLOGIES.TODO,
+    background: ToDoAppImg,
+    slug: 'todo-app',
+    gif: [
+      {
+        gif: IxnomeGif1,
+        title: 'Subscriptions',
+      },
+      {
+        gif: IxnomeGif2,
+        title: 'Trading Currency',
+      },
+      {
+        gif: IxnomeGif3,
+        title: 'Slider',
+      },
+      {
+        gif: IxnomeGif4,
+        title: 'Tutorial',
+      },
+    ],
   },
   // {
   //   name: 'Bike Shop Landing',

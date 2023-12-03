@@ -26,6 +26,10 @@
   src: url(../assets/fonts/MavenPro-Bold.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   scroll-behavior: smooth;
 }

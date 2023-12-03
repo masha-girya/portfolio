@@ -16,7 +16,7 @@ export const Footer = () => {
             <h5 className="footer__subtitle">
               A Fullstack Web developer from Brave Ukraine
               <br />
-              Focused on build user-friendly and high-quality websites
+              Focused on building user-friendly and high-quality websites
             </h5>
           </div>
 
