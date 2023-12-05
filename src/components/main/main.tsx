@@ -2,7 +2,10 @@ import { SideSection } from '../side-section';
 // import { ProjectV2 } from '../project-v2';
 import { Footer } from '../footer';
 import { UpButton } from '../up-button';
-import { PROJECTS_CONSTANTS as PROJECTS } from '../../app-constants';
+import {
+  MAIN_TITLE_CONSTANT,
+  PROJECTS_CONSTANTS as PROJECTS,
+} from '../../app-constants';
 import './main.scss';
 import { Project } from '../project';
 
@@ -13,10 +16,10 @@ export const Main = () => {
         <div className="main__header-box">
           <h1 className="main__title">Hi, I am Maria Girya!</h1>
           <h5 className="main__subtitle">
-            A Fullstack Web developer from Brave Ukraine
+            {MAIN_TITLE_CONSTANT[0]}
           </h5>
           <h5 className="main__subtitle">
-            Focused on building user-friendly and high-quality websites
+            {MAIN_TITLE_CONSTANT[1]}
           </h5>
         </div>
         <div className="main__links">

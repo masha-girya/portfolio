@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 import React from 'react';
 import {
   PROJECTS_LINKS_CONSTANTS as PROJECTS_LINKS,
+  MAIN_TITLE_CONSTANT,
 } from '../../app-constants';
 import { SideSection } from '../side-section';
 import './footer.scss';
@@ -14,9 +16,9 @@ export const Footer = () => {
             <h3 className="footer__title">Maria Girya</h3>
 
             <h5 className="footer__subtitle">
-              A Fullstack Web developer from Brave Ukraine
+              {MAIN_TITLE_CONSTANT[0]}
               <br />
-              Focused on building user-friendly and high-quality websites
+              {MAIN_TITLE_CONSTANT[1]}
             </h5>
           </div>
 
