@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a9f46d34.css",
-    "main.js": "/portfolio/static/js/main.ddfceb44.js",
+    "main.css": "/portfolio/static/css/main.c48c6bd6.css",
+    "main.js": "/portfolio/static/js/main.654e8e3b.js",
     "static/media/trading-inner.gif": "/portfolio/static/media/trading-inner.3d4df9f5d5f82b209aa7.gif",
     "static/media/IXNOME-Landing.png": "/portfolio/static/media/IXNOME-Landing.a8f302b3a74c1994ab59.png",
     "static/media/Evo-Play.png": "/portfolio/static/media/Evo-Play.5eb142b07da45d179fb6.png",
@@ -24,11 +24,11 @@
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.24aa4e168ed85feeca8d3f944408f2db.svg",
-    "main.a9f46d34.css.map": "/portfolio/static/css/main.a9f46d34.css.map",
-    "main.ddfceb44.js.map": "/portfolio/static/js/main.ddfceb44.js.map"
+    "main.c48c6bd6.css.map": "/portfolio/static/css/main.c48c6bd6.css.map",
+    "main.654e8e3b.js.map": "/portfolio/static/js/main.654e8e3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9f46d34.css",
-    "static/js/main.ddfceb44.js"
+    "static/css/main.c48c6bd6.css",
+    "static/js/main.654e8e3b.js"
   ]
 }
