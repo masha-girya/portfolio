@@ -8,6 +8,7 @@ import {
 } from '../../app-constants';
 import './main.scss';
 import { Project } from '../project';
+// import { ProjectV2 } from '../project-v2';
 
 export const Main = () => {
   return (

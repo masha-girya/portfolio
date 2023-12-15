@@ -14,10 +14,7 @@ import PhonesImg from '../assets/Phones.png';
 import SpunchImg from '../assets/Spunch2.png';
 import ChuckNorrisImg from '../assets/ChuckNorris.png';
 import ToDoAppImg from '../assets/ToDoApp.png';
-import IxnomeGif1 from '../assets/ixnome-web/subscriptions.gif';
-import IxnomeGif3 from '../assets/ixnome-web/trading-inner.gif';
-import IxnomeGif2 from '../assets/ixnome-web/slider.gif';
-import IxnomeGif4 from '../assets/ixnome-web/tutorial.gif';
+import CafeImg from '../assets/Cafe.png';
 
 export const PROJECTS_CONSTANTS: IProject[] = [
   {
@@ -30,24 +27,6 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.IXNOME_APP,
     background: IXNOMEWebImg,
     slug: 'ixnome-web-app',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
   },
   {
     name: 'IXNOME Landing Page',
@@ -59,24 +38,17 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.IXNOME_LANDING,
     background: IXNOMELandingImg,
     slug: 'ixnome-landing',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
+  },
+  {
+    name: 'Cafe Website',
+    description: ['Web Application of Food delivery cafe with authentication, user and admin mode, crypto payment, and notifications. As admin you can add, modify, and delete products, combine menus, accept/decline orders.', 'User has ability to order products, to issue an order, and pay for it by crypto.', 'As a non-authorized user you can see all products, but for ordering you should sing up.', 'This web app was written by me from scratch in 2 month.'],
+    parts: 'Part: Backend and Frontend',
+    time: 'Time: 2 months from scratch',
+    linkWeb: PROJECTS_LINKS.CAFE_DEMO,
+    linkGit: PROJECTS_LINKS.CAFE_GITHUB,
+    technologies: TECHNOLOGIES.CAFE,
+    background: CafeImg,
+    slug: 'codempire-cafe',
   },
   {
     name: 'SPUNCH Agency Website',
@@ -88,24 +60,6 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.SPUNCH_WEB,
     background: SpunchImg,
     slug: 'spunch',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
   },
   {
     name: 'Lonely Rabbit',
@@ -117,24 +71,6 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.LR_WEB,
     background: LonelyRabbit,
     slug: 'lonely-rabbit',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
   },
   {
     name: 'EvoPlay Landing',
@@ -146,34 +82,7 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.EVO_LANDING,
     background: EvoPlayImg,
     slug: 'evo-play',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
   },
-  // {
-  //   name: 'Cafe Website',
-  //   description: ['Web Application with authentication, admin mode, ability to order products, and pay for order by crypto.', 'You can see how as non-authorized user all products, but for ordering you should sing up.', 'Now it is only available to run locally because I am working on a deploy, thank you for understanding :)'],
-  //   parts: 'Part: Backend and Frontend',
-  //   time: 'Time: 2 months from scratch',
-  //   linkWeb: '',
-  //   linkGit: PROJECTS_LINKS.CAFE_GITHUB,
-  //   technologies: TECHNOLOGIES.CAFE,
-  // },
   {
     name: 'Phones Online Store',
     description: ['Responsive SPA of online gadgets shop.This App was created by team of 5 members from scratch both Frontend and Backend.', 'Project is about to make it easy for user to choose his nest smartphone.'],
@@ -184,24 +93,6 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.PHONES,
     background: PhonesImg,
     slug: 'phones-store',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
   },
   {
     name: 'Chuck Norris Jokes App',
@@ -213,24 +104,6 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.PHONES,
     background: ChuckNorrisImg,
     slug: 'chuck-norris-jokes',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
   },
   {
     name: 'Todo Application',
@@ -242,24 +115,6 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     technologies: TECHNOLOGIES.TODO,
     background: ToDoAppImg,
     slug: 'todo-app',
-    gif: [
-      {
-        gif: IxnomeGif1,
-        title: 'Subscriptions',
-      },
-      {
-        gif: IxnomeGif2,
-        title: 'Trading Currency',
-      },
-      {
-        gif: IxnomeGif3,
-        title: 'Slider',
-      },
-      {
-        gif: IxnomeGif4,
-        title: 'Tutorial',
-      },
-    ],
   },
   // {
   //   name: 'Bike Shop Landing',

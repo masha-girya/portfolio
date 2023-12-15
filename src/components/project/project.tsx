@@ -1,7 +1,10 @@
 /* eslint-disable max-len */
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { IProject } from '../../types';
 import { Technologies } from '../technologies';
 import './project.scss';
+import { useDevice } from '../../hooks/useDevice';
 
 interface IProps {
   project: IProject,
@@ -11,17 +14,34 @@ export const Project = ({ project }: IProps) => {
   const {
     name,
     description,
+    background,
     parts,
     time,
     linkWeb,
     linkGit,
     technologies,
   } = project;
+  const { isTablet, isMobile } = useDevice();
+  const [isImageOnShow, setIsImageOnShow] = useState(false);
 
   return (
     <div className="project">
       <div className="project__static">
         <article className="project__box">
+          <Link
+            to={linkWeb}
+            target="_blank"
+            rel="no-referer"
+            className="project__boxHover"
+          >
+            <img
+              src={background}
+              alt={name}
+              className={isImageOnShow
+                ? 'project__boxHover__image project__boxHover__image_active'
+                : 'project__boxHover__image'}
+            />
+          </Link>
           <h3 className="project__title">{name}</h3>
 
           <div className="project__descriptionList">
@@ -44,8 +64,26 @@ export const Project = ({ project }: IProps) => {
           </div>
         </article>
 
-        <div className="project__tech">
-          <Technologies technologies={technologies} />
+        <div className="project__rightCol">
+          <div className="project__tech">
+            <h2 className="project__tech__title">
+              {(isTablet || isMobile)
+                ? (
+                  <button
+                    className="project__tech__title_image"
+                    type="button"
+                    onClick={() => setIsImageOnShow(!isImageOnShow)}
+                  >
+                    <span>
+                      ➔
+                    </span>
+                    show/hide image
+                  </button>
+                )
+                : 'Technologies used:'}
+            </h2>
+            <Technologies technologies={technologies} />
+          </div>
 
           <div className="project__links">
             {linkWeb.length > 0 && (
