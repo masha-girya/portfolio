@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -35,14 +35,14 @@ export const ProjectPage = () => {
         <div className="project-page__container">
           <h1 className="project-page__name">{project.name}</h1>
           <Swiper navigation modules={[Navigation]} className="swiper">
-            {project.gif.map(gif => (
+            {/* {project.gif.map(gif => (
               <SwiperSlide
                 key={gif.title}
                 className="swiper__slide"
               >
                 <img src={gif.gif} alt={gif.title} />
               </SwiperSlide>
-            ))}
+            ))} */}
           </Swiper>
         </div>
       )}

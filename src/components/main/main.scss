@@ -124,8 +124,13 @@
 
       max-width: 1260px;
 
+      @media (max-width: 769px) {
+        row-gap: 100px;
+      }
+
       @media (max-width: 490px) {
         row-gap: 90px;
+        margin: 0 20px;
       }
     }
   }
