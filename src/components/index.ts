@@ -7,3 +7,4 @@ export * from './technologies';
 export * from './up-button';
 export * from './project-v2';
 export * from './project-page';
+export * from './header';

@@ -1,0 +1,40 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as var;
+
+.portfolio-list {
+  position: relative;
+  z-index: var.$index-main;
+  top: 0;
+
+  margin: 0 auto 150px;
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  box-shadow: 10px 10px 21px 0px var.$color-background;
+
+  @media (max-width: 769px) {
+    margin-bottom: 180px;
+  }
+
+  @media (max-width: 490px) {
+    margin-bottom: 277px;
+  }
+
+  &__projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin: 0 64px;
+
+    max-width: 1260px;
+
+    @media (max-width: 769px) {
+      row-gap: 100px;
+    }
+
+    @media (max-width: 490px) {
+      row-gap: 90px;
+      margin: 0 20px;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { ReactComponent as Linkedin } from '../../assets/icons/linkedin.svg';
 import { ReactComponent as Gmail } from '../../assets/icons/gmail.svg';
 import { ReactComponent as Telegram } from '../../assets/icons/telegram.svg';
 import { ReactComponent as Arrow } from '../../assets/icons/arrow.svg';
+import { ReactComponent as Noise } from '../../assets/icons/noise.svg';
 
 export const ICONS = {
   github: Github,
@@ -11,6 +12,7 @@ export const ICONS = {
   linkedin: Linkedin,
   telegram: Telegram,
   arrow: Arrow,
+  noise: Noise,
 } as const;
 
 export type TIcon = keyof typeof ICONS;

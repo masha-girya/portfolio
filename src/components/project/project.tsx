@@ -32,14 +32,14 @@ export const Project = ({ project }: IProps) => {
             to={linkWeb}
             target="_blank"
             rel="no-referer"
-            className="project__boxHover"
+            className="project__box__boxHover"
           >
             <img
               src={background}
               alt={name}
               className={isImageOnShow
-                ? 'project__boxHover__image project__boxHover__image_active'
-                : 'project__boxHover__image'}
+                ? 'project__box__boxHover__image project__box__boxHover__image_active'
+                : 'project__box__boxHover__image'}
             />
           </Link>
           <h3 className="project__title">{name}</h3>
