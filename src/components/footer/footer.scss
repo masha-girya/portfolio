@@ -14,7 +14,8 @@
 
   width: 100%;
 
-  @include mixins.background(135deg, var.$color-contrast, 10%);
+  // @include mixins.background(135deg, var.$color-contrast, 10%);
+  background-color: var.$color-contrast;
 
   &__box {
     max-width: 80%;

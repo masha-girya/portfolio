@@ -1,0 +1,156 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as var;
+
+.header {
+  position: sticky;
+  position: relative;
+  z-index: var.$index-header;
+
+  @include mixins.placeItems(center, center);
+  flex-direction: column;
+
+  height: 100vh;
+
+  &__box {
+    @include mixins.placeItems(center, center);
+    flex-direction: column;
+
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      max-width: 85%;
+    }
+
+    @media (max-width: 490px) {
+      margin-top: 75px;
+    }
+  }
+
+  &__title {
+    margin: 0 30px 30px;
+
+    @include mixins.fontTitle();
+    text-transform: uppercase;
+    color: var.$color-contrast;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+
+    @media (max-width: 490px) {
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    @include mixins.fontSubtitle();
+    color: var.$color-text;
+
+
+    &:first-of-type {
+      max-width: 800px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 490px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  position: relative;
+
+  margin-top: 80px;
+  padding: 20px;
+
+  @include mixins.fontSubtitle();
+  text-transform: uppercase;
+  color: var.$color-background;
+
+  @include mixins.background(45deg, var.$color-contrast, 5%);
+
+  @include mixins.animationHover("PORTFOLIO");
+
+  @media (max-width: 1024px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 490px) {
+    margin-top: 75px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  &--resume {
+    @include mixins.background(-135deg, var.$color-contrast, 5%);
+  }
+
+  &--link {
+    color: var.$color-background;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var.$slice-1;
+    transform: translate(-20px, -10px);
+  }
+
+  10% {
+    clip-path: var.$slice-3;
+    transform: translate(10px, 10px);
+  }
+
+  20% {
+    clip-path: var.$slice-1;
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var.$slice-3;
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var.$slice-2;
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var.$slice-3;
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var.$slice-4;
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var.$slice-2;
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var.$slice-5;
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var.$slice-1;
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var.$slice-1;
+    transform: translate(0);
+  }
+}
