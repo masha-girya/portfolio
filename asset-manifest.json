@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.11d5aeef.css",
-    "main.js": "/portfolio/static/js/main.308ff193.js",
+    "main.css": "/portfolio/static/css/main.a643b89f.css",
+    "main.js": "/portfolio/static/js/main.a6f99d48.js",
     "static/media/IXNOME-Landing.png": "/portfolio/static/media/IXNOME-Landing.a8f302b3a74c1994ab59.png",
     "static/media/Cafe.png": "/portfolio/static/media/Cafe.10b287e3599a633c11c9.png",
     "static/media/Evo-Play.png": "/portfolio/static/media/Evo-Play.5eb142b07da45d179fb6.png",
@@ -17,15 +17,16 @@
     "static/media/MavenPro-Regular.ttf": "/portfolio/static/media/MavenPro-Regular.edc66056c3b9c096681d.ttf",
     "static/media/github.svg": "/portfolio/static/media/github.0200b55c6c174351d03efca737facb31.svg",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.6f1b91869c53777309c967c279c764e9.svg",
+    "static/media/noise.svg": "/portfolio/static/media/noise.5ebcb6eff2a5b64b81d85b3303adcc13.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.61699742f017b006645f1fb8d6928391.svg",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.24aa4e168ed85feeca8d3f944408f2db.svg",
-    "main.11d5aeef.css.map": "/portfolio/static/css/main.11d5aeef.css.map",
-    "main.308ff193.js.map": "/portfolio/static/js/main.308ff193.js.map"
+    "main.a643b89f.css.map": "/portfolio/static/css/main.a643b89f.css.map",
+    "main.a6f99d48.js.map": "/portfolio/static/js/main.a6f99d48.js.map"
   },
   "entrypoints": [
-    "static/css/main.11d5aeef.css",
-    "static/js/main.308ff193.js"
+    "static/css/main.a643b89f.css",
+    "static/js/main.a6f99d48.js"
   ]
 }
