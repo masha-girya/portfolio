@@ -5,27 +5,20 @@
   &__gradientBox {
     position: relative;
     z-index: var.$index-main;
-    background-color: var.$color-background;
+
+    @include mixins.backgroundNoise();
+    box-shadow: 10px 10px 21px 0px var.$color-background;
 
     width: 100%;
-    height: 100%;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      background: url("../../assets/icons/noise.svg");
+    margin: 0 auto 190px;
+    padding-bottom: 20px;
+  
+    @media (max-width: 600px) {
+      margin-bottom: 220px;
     }
 
-    &__noise {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
+    @media (max-width: 490px) {
+      margin-bottom: 290px;
     }
   }
 }

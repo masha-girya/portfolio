@@ -4,21 +4,17 @@ import { SideSection } from '../side-section';
 import { Footer } from '../footer';
 import { UpButton } from '../up-button';
 import './main.scss';
-// import { Icon } from '../icon';
 
 export const Main = () => {
   return (
     <div className="main">
       <div className="main__gradientBox">
-        {/* <div className="main__gradientBox__noise">
-          <Icon type="noise" />
-        </div> */}
         <Header />
         <SideSection />
         <PortfolioList />
+        <UpButton />
       </div>
       <Footer />
-      <UpButton />
     </div>
   );
 };

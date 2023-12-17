@@ -12,7 +12,7 @@ export const Footer = () => {
     <footer className="footer" id="footer">
       <div className="footer__box">
         <div className="footer__info">
-          <div>
+          <div className="footer__info__text">
             <h3 className="footer__title">Maria Girya</h3>
 
             <h5 className="footer__subtitle">

@@ -8,3 +8,4 @@ export * from './up-button';
 export * from './project-v2';
 export * from './project-page';
 export * from './header';
+export * from './link-button';

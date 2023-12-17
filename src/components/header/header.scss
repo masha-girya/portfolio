@@ -2,12 +2,12 @@
 @use '../../styles/variables' as var;
 
 .header {
-  position: sticky;
   position: relative;
   z-index: var.$index-header;
 
   @include mixins.placeItems(center, center);
   flex-direction: column;
+  @include mixins.backgroundNoise();
 
   height: 100vh;
 

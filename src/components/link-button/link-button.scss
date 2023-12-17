@@ -1,0 +1,38 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as var;
+
+.linkButton {
+  position: relative;
+  @include mixins.fontSubtitle();
+  color: var.$color-contrast;
+  line-height: 45px;
+
+  border-bottom: 1px solid var.$color-contrast;
+
+  transition: all .2s;
+
+  &--underline {
+    background-color: var.$color-contrast;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+
+  &:hover &--underline {
+    width: 100%;
+  }
+
+  &:hover {
+    color: var.$color-background;
+    border-bottom: 1px dotted var.$color-contrast;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 20px;
+  }
+}

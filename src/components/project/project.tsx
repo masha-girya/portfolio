@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 import { IProject } from '../../types';
-import { Technologies } from '../technologies';
-import './project.scss';
+import { BoxHoverWrapper } from './box-hover-wrapper';
+import { LinksAndTechs } from './links-and-techs';
 import { useDevice } from '../../hooks/useDevice';
+import './project.scss';
 
 interface IProps {
   project: IProject,
@@ -15,6 +16,7 @@ export const Project = ({ project }: IProps) => {
     name,
     description,
     background,
+    backgroundMob,
     parts,
     time,
     linkWeb,
@@ -28,20 +30,18 @@ export const Project = ({ project }: IProps) => {
     <div className="project">
       <div className="project__static">
         <article className="project__box">
-          <Link
-            to={linkWeb}
-            target="_blank"
-            rel="no-referer"
-            className="project__box__boxHover"
-          >
-            <img
-              src={background}
-              alt={name}
-              className={isImageOnShow
-                ? 'project__box__boxHover__image project__box__boxHover__image_active'
-                : 'project__box__boxHover__image'}
-            />
-          </Link>
+          <BoxHoverWrapper isTouchableDevice={isMobile || isTablet} linkWeb={linkWeb}>
+            <div className="project__box__boxHover">
+              <img
+                src={isMobile ? backgroundMob : background}
+                alt={name}
+                className={classNames('project__box__boxHover__image', {
+                  project__box__boxHover__image_active: isImageOnShow,
+                  project__box__boxHover__image_leftPosition: name === 'IXNOME Web Application',
+                })}
+              />
+            </div>
+          </BoxHoverWrapper>
           <h3 className="project__title">{name}</h3>
 
           <div className="project__descriptionList">
@@ -53,8 +53,9 @@ export const Project = ({ project }: IProps) => {
           </div>
 
           <div>
-            {parts.split('.').map(part => (
-              <h4 key={part} className="project__description">
+            {parts.map((part, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <h4 key={i} className="project__description">
                 {part}
               </h4>
             ))}
@@ -64,53 +65,14 @@ export const Project = ({ project }: IProps) => {
           </div>
         </article>
 
-        <div className="project__rightCol">
-          <div className="project__tech">
-            <h2 className="project__tech__title">
-              {(isTablet || isMobile)
-                ? (
-                  <button
-                    className="project__tech__title_image"
-                    type="button"
-                    onClick={() => setIsImageOnShow(!isImageOnShow)}
-                  >
-                    <span>
-                      ➔
-                    </span>
-                    show/hide image
-                  </button>
-                )
-                : 'Technologies used:'}
-            </h2>
-            <Technologies technologies={technologies} />
-          </div>
-
-          <div className="project__links">
-            {linkWeb.length > 0 && (
-              <a
-                className="project__link"
-                href={linkWeb}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Visit WebPage</span>
-                <span className="project__link--underline" />
-              </a>
-            )}
-
-            {linkGit.length > 0 && (
-              <a
-                className="project__link"
-                href={linkGit}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Github</span>
-                <span className="project__link--underline" />
-              </a>
-            )}
-          </div>
-        </div>
+        <LinksAndTechs
+          linkGit={linkGit}
+          linkWeb={linkWeb}
+          technologies={technologies}
+          isTouchableDevice={(isMobile || isTablet)}
+          isImageOnShow={isImageOnShow}
+          setIsImageOnShow={setIsImageOnShow}
+        />
       </div>
     </div>
   );
