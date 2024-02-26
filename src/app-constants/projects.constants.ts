@@ -1,44 +1,47 @@
 /* eslint-disable max-len */
-import {
-  TECHNOLOGIES_CONSTANTS as TECHNOLOGIES,
-} from './technologies.constants';
-import {
-  PROJECTS_LINKS_CONSTANTS as PROJECTS_LINKS,
-} from './projects-links.constants';
+import { TECHNOLOGIES_CONSTANTS as TECHNOLOGIES } from './technologies.constants';
+import { PROJECTS_LINKS_CONSTANTS as PROJECTS_LINKS } from './projects-links.constants';
 import { IProject } from '../types';
 // import IXNOMEWebImg from '../assets/IXNOME-web.png';
-import IXNOMEWebImg from '../assets/IXNOME-Web-Mob.png';
-import IXNOMELandingImg from '../assets/IXNOME-Landing-Mob.png';
-import LonelyRabbit from '../assets/LonelyRabbit.png';
-import EvoPlayImg from '../assets/Evo-Play.png';
-import EvoPlayMobImg from '../assets/Evo-Play-Mob.png';
-import PhonesImg from '../assets/Phones.png';
-import PhonesMobImg from '../assets/Phones-Mob.png';
-import SpunchImg from '../assets/Spunch.png';
-import SpunchMobImg from '../assets/Spunch-Mob.png';
-import ChuckNorrisImg from '../assets/ChuckNorris-Mob.png';
-import ToDoAppImg from '../assets/ToDoApp.png';
-import CafeImg from '../assets/Cafe.png';
-import CafeMobImg from '../assets/Cafe-Mob.png';
+import IXNOMEWebImg from 'assets/IXNOME-Web-Mob.png';
+import IXNOMELandingImg from 'assets/IXNOME-Landing-Mob.png';
+import LonelyRabbit from 'assets/LonelyRabbit.png';
+import EvoPlayImg from 'assets/Evo-Play.png';
+import EvoPlayMobImg from 'assets/Evo-Play-Mob.png';
+import PhonesImg from 'assets/Phones.png';
+import PhonesMobImg from 'assets/Phones-Mob.png';
+import SpunchImg from 'assets/Spunch.png';
+import SpunchMobImg from 'assets/Spunch-Mob.png';
+import ChuckNorrisImg from 'assets/ChuckNorris-Mob.png';
+import ToDoAppImg from 'assets/ToDoApp.png';
+import CafeImg from 'assets/Cafe.png';
+import CafeMobImg from 'assets/Cafe-Mob.png';
+import RecipesImg from 'assets/RecipesImg.png';
+import RecipesMobImg from 'assets/RecipesMobImg.png';
+import TodoDragImg from 'assets/TodoDragImg.png';
+import TodoDragMobImg from 'assets/TodoDragMobImg.png';
+import QuizImg from 'assets/QuizImg.png';
+import QuizMobImg from 'assets/QuizMobImg.png';
 
 export const PROJECTS_CONSTANTS: IProject[] = [
   {
-    name: 'IXNOME Web Application',
+    name: 'SPUNCH Agency Website',
     description: [
-      'Web application for AI-supported crypto-trading, enabling users to execute full-cycle trades using AI predictions in the cryptocurrency market.',
-      'Features include dashboards with charts and crypto news, an AI Chat, a Trading section powered by AI, a Subscriptions section, and Tutorials.',
+      'A corporate website showcasing SPUNCH Agency`s expertise in IT consultations, Machine Learning, AI development, and DevOps.',
+      'Developed while working at SPUNCH Agency, serving as the primary website for the company.',
+      'This website effectively represents the agency, highlighting its services and offerings.',
     ],
     parts: [
-      'Roles: Frontend Developer (SPUNCH agency)',
-      'Implemented: AI Chat, tutorial, subscription verification, and layout editing',
+      'Roles: Frontend Development (at SPUNCH agency)',
+      'Implementations: created layout from scratch with custom animations and transitions, localization functionality, blog page',
     ],
-    time: 'Time: 1.5 months',
-    linkWeb: PROJECTS_LINKS.IXNOME_APP,
+    time: 'Time: 1,5 months',
+    linkWeb: PROJECTS_LINKS.SPUNCH_WEB,
     linkGit: '',
-    technologies: TECHNOLOGIES.IXNOME_APP,
-    background: IXNOMEWebImg,
-    backgroundMob: IXNOMEWebImg,
-    slug: 'ixnome-web-app',
+    technologies: TECHNOLOGIES.SPUNCH_WEB,
+    background: SpunchImg,
+    backgroundMob: SpunchMobImg,
+    slug: 'spunch',
   },
   {
     name: 'IXNOME Landing Page',
@@ -57,6 +60,25 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     background: IXNOMELandingImg,
     backgroundMob: IXNOMELandingImg,
     slug: 'ixnome-landing',
+  },
+  {
+    name: 'Recipes Web Site',
+    description: [
+      'A website featuring a custom recipes list is currently undergoing regular updates.',
+      'The current website includes flexible data visualization, a functionality for saving favorite recipes, a slider, and a blog with pagination.',
+      'Future plans involve creating filters by category, implementing dynamic SEO, adding banner animations, incorporating icon tooltips, and developing a mobile version using React Native.',
+    ],
+    parts: [
+      'Roles: Fullstack Developer',
+      'Implemented: Flexible data visualizer, architectural components and data, blog with pagination.',
+    ],
+    time: '',
+    linkWeb: PROJECTS_LINKS.RECIPES_WEB,
+    linkGit: '',
+    technologies: TECHNOLOGIES.RECIPES,
+    background: RecipesImg,
+    backgroundMob: RecipesMobImg,
+    slug: 'recipes-web-site',
   },
   {
     name: 'Cafe Website',
@@ -79,23 +101,22 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     slug: 'codempire-cafe',
   },
   {
-    name: 'SPUNCH Agency Website',
+    name: 'IXNOME Web Application',
     description: [
-      'A corporate website showcasing SPUNCH Agency`s expertise in IT consultations, Machine Learning, AI development, and DevOps.',
-      'Developed while working at SPUNCH Agency, serving as the primary website for the company.',
-      'This website effectively represents the agency, highlighting its services and offerings.',
+      'Web application for AI-supported crypto-trading, enabling users to execute full-cycle trades using AI predictions in the cryptocurrency market.',
+      'Features include dashboards with charts and crypto news, an AI Chat, a Trading section powered by AI, a Subscriptions section, and Tutorials.',
     ],
     parts: [
-      'Roles: Frontend Development (at SPUNCH agency)',
-      'Implementations: created layout from scratch with custom animations and transitions, localization functionality, blog page',
+      'Roles: Frontend Developer (SPUNCH agency)',
+      'Implemented: AI Chat, tutorial, subscription verification, and layout editing',
     ],
-    time: 'Time: 1,5 months',
-    linkWeb: PROJECTS_LINKS.SPUNCH_WEB,
+    time: 'Time: 1.5 months',
+    linkWeb: PROJECTS_LINKS.IXNOME_APP,
     linkGit: '',
-    technologies: TECHNOLOGIES.SPUNCH_WEB,
-    background: SpunchImg,
-    backgroundMob: SpunchMobImg,
-    slug: 'spunch',
+    technologies: TECHNOLOGIES.IXNOME_APP,
+    background: IXNOMEWebImg,
+    backgroundMob: IXNOMEWebImg,
+    slug: 'ixnome-web-app',
   },
   {
     name: 'Lonely Rabbit Corporate Website',
@@ -132,6 +153,46 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     background: EvoPlayImg,
     backgroundMob: EvoPlayMobImg,
     slug: 'evo-play',
+  },
+  {
+    name: 'Todo App with Drag-And-Drop',
+    description: [
+      'The second one planner of my work life for managing tasks efficiently.',
+      'Users can create boards, and within each board, they can create tasks and manage them using drag-and-drop functionality.',
+      'User authorization may be added later.',
+      'Please note that, due to deployment on free hosting, data loading may take up to 30 seconds:)',
+    ],
+    parts: [
+      'Roles: Fullstack Development',
+      'Implementations: CRUD with both todos and boards, drag-and-drop, search functionality',
+    ],
+    time: 'Time: 5 days',
+    linkWeb: PROJECTS_LINKS.TODO_DRAG_DEMO,
+    linkGit: PROJECTS_LINKS.TODO_DRAG_GIHUB,
+    technologies: TECHNOLOGIES.TODO_DRAG,
+    background: TodoDragImg,
+    backgroundMob: TodoDragMobImg,
+    slug: 'todo-app',
+  },
+  {
+    name: 'Multilingual Quiz',
+    description: [
+      'A short quiz with localization for german, english, spanish and french.',
+      'All functionality is working within routes. Users can go back by routes and change their answers.',
+      'There are 4 types of quiz type of question: multi-select, single, bubble-select and single-icon. This functionality was implemented within one component.',
+      'After passing quiz users can download their answers in CSV file.',
+    ],
+    parts: [
+      'Roles: Frontend Development',
+      'Implementations: routes navigation, localization, data data storage, CSV integration',
+    ],
+    time: 'Time: 4 days',
+    linkWeb: PROJECTS_LINKS.QUIZ_DEMO,
+    linkGit: PROJECTS_LINKS.QUIZ_GITHUB,
+    technologies: TECHNOLOGIES.QUIZ,
+    background: QuizImg,
+    backgroundMob: QuizMobImg,
+    slug: 'todo-app',
   },
   {
     name: 'Phones Online Store',
@@ -180,7 +241,7 @@ export const PROJECTS_CONSTANTS: IProject[] = [
     ],
     parts: [
       'Roles: Frontend Development',
-      'Implementations: APi requests, transitions, form functionality',
+      'Implementations: API requests, transitions, form functionality',
     ],
     time: 'Time: 10 days',
     linkWeb: PROJECTS_LINKS.TODO_DEMO,

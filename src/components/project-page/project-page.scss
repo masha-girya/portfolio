@@ -1,5 +1,5 @@
-@use '../../styles/variables' as var;
-@use '../../styles/mixins';
+@use 'styles/mixins';
+@use 'styles/variables' as var;
 
 .project-page {
   &__container {
@@ -9,7 +9,7 @@
   &__name {
     color: var.$color-text;
     @include mixins.fontTitle();
-    // font-size: 40px;
+
     letter-spacing: .5px;
     text-align: center;
 

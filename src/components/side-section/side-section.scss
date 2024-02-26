@@ -1,5 +1,5 @@
-@use '../../styles/variables' as var;
-@use '../../styles/mixins';
+@use 'styles/mixins';
+@use 'styles/variables' as var;
 
 .contacts {
   display: flex;
@@ -30,10 +30,10 @@
     padding: 5px;
     margin: 0 auto;
 
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:hover {
-      @include mixins.animationHover2("", var.$color-text, var.$color-contrast);
+      @include mixins.animationHover2('', var.$color-text, var.$color-contrast);
       @include mixins.iconHover();
     }
 
@@ -72,7 +72,11 @@
       padding-right: 10px;
 
       &:hover {
-        @include mixins.animationHover2("", var.$color-contrast, var.$color-text);
+        @include mixins.animationHover2(
+          '',
+          var.$color-contrast,
+          var.$color-text
+        );
       }
     }
 

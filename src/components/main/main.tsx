@@ -1,8 +1,10 @@
-import { Header } from '../header';
-import { PortfolioList } from '../portfolio-list';
-import { SideSection } from '../side-section';
-import { Footer } from '../footer';
-import { UpButton } from '../up-button';
+import {
+  Header,
+  PortfolioList,
+  SideSection,
+  Footer,
+  UpButton,
+} from 'components';
 import './main.scss';
 
 export const Main = () => {

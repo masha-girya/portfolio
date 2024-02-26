@@ -1,4 +1,4 @@
-@use './variables' as var;
+@use "./variables" as var;
 
 @mixin fontTitle {
   font-family: var.$font-family;
@@ -8,8 +8,8 @@
 
 @mixin fontSubtitle {
   font-family: var.$font-family;
-  font-weight: var.$font-weight-semi-bold;
-  font-size: 30px;
+  font-weight: var.$font-weight-medium;
+  font-size: 25px;
 }
 
 @mixin fontDescription {
@@ -46,15 +46,21 @@
     right: 0;
     bottom: 0;
 
-    background: linear-gradient(45deg, transparent 3%, var.$color-text 3%, var.$color-text 5%, var.$color-contrast 5%);
+    background: linear-gradient(
+      45deg,
+      transparent 3%,
+      var.$color-text 3%,
+      var.$color-text 5%,
+      var.$color-contrast 5%
+    );
     text-shadow: -3px -3px 0px var.$color-contrast, 3px 3px 0px var.$color-text;
     clip-path: var.$slice-0;
   }
 
-   &:hover::after {
+  &:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
-   }
+  }
 }
 
 @mixin animationHover2($content, $main-color, $color) {
@@ -69,19 +75,25 @@
     right: 0;
     bottom: 0;
 
-    background: linear-gradient(45deg, transparent 3%, $color 3%, $color 5%, $main-color 5%);
+    background: linear-gradient(
+      45deg,
+      transparent 3%,
+      $color 3%,
+      $color 5%,
+      $main-color 5%
+    );
     text-shadow: -3px -3px 0px $main-color, 3px 3px 0px $color;
     clip-path: var.$slice-0;
   }
 
-   &:hover::after {
+  &:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
-   }
+  }
 }
 
 @mixin iconHover() {
-  animation: hover-tech .75s linear 1;
+  animation: hover-tech 0.75s linear 1;
 }
 
 @keyframes hover-tech {
@@ -124,7 +136,7 @@
 
 @mixin boxAnimation {
   transform: translate(0, 0);
-  transition: transform .8s cubic-bezier(0, 0.55, 0.45, 1);
+  transition: transform 0.8s cubic-bezier(0, 0.55, 0.45, 1);
 }
 
 @mixin boxHover {

@@ -1,5 +1,5 @@
-import { Icon, TIcon } from '../icon';
-import { SOCIAL_CONSTANTS as SOCIAL } from '../../app-constants';
+import { Icon, TIcon } from 'components';
+import { SOCIAL_CONSTANTS as SOCIAL } from 'app-constants';
 import './side-section.scss';
 
 interface IProps {
@@ -13,7 +13,6 @@ export const SideSection = ({ isFooter }: IProps) => {
       : 'contacts'}
     >
       {Object.keys(SOCIAL).map(link => (
-        // eslint-disable-next-line jsx-a11y/control-has-associated-label
         <a
           href={link === 'GMAIL'
             ? `mailto:${SOCIAL[link]}`
