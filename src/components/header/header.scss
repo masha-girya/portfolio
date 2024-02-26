@@ -1,5 +1,5 @@
-@use '../../styles/mixins';
-@use '../../styles/variables' as var;
+@use 'styles/mixins';
+@use 'styles/variables' as var;
 
 .header {
   position: relative;
@@ -7,15 +7,21 @@
 
   @include mixins.placeItems(center, center);
   flex-direction: column;
+
   @include mixins.backgroundNoise();
 
   height: 100vh;
 
+  overflow-x: hidden;
+
   &__box {
+    position: relative;
+    z-index: 1;
+
     @include mixins.placeItems(center, center);
     flex-direction: column;
 
-    text-align: center;
+    padding-top: 100px;
 
     @media (max-width: 1200px) {
       max-width: 85%;
@@ -48,9 +54,9 @@
     @include mixins.fontSubtitle();
     color: var.$color-text;
 
+    text-align: center;
 
     &:first-of-type {
-      max-width: 800px;
       margin-bottom: 10px;
     }
 
@@ -63,39 +69,7 @@
 .links {
   display: flex;
   gap: 20px;
-}
-
-.button {
-  position: relative;
-
-  margin-top: 80px;
-  padding: 20px;
-
-  @include mixins.fontSubtitle();
-  text-transform: uppercase;
-  color: var.$color-background;
-
-  @include mixins.background(45deg, var.$color-contrast, 5%);
-
-  @include mixins.animationHover("PORTFOLIO");
-
-  @media (max-width: 1024px) {
-    font-size: 25px;
-  }
-
-  @media (max-width: 490px) {
-    margin-top: 75px;
-    padding: 15px;
-    font-size: 20px;
-  }
-
-  &--resume {
-    @include mixins.background(-135deg, var.$color-contrast, 5%);
-  }
-
-  &--link {
-    color: var.$color-background;
-  }
+  margin-top: 60px;
 }
 
 @keyframes glitch {

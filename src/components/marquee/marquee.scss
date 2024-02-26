@@ -1,0 +1,95 @@
+@use 'styles/mixins';
+@use 'styles/variables' as var;
+
+.marqueeWrapper {
+  position: relative;
+
+  width: 100%;
+  height: 40px;
+
+  overflow: hidden;
+
+  &_upsideDown {
+    transform: rotate(180deg);
+  }
+
+  // @media (max-width: 1200px) {
+  //   height: 46px;
+  // }
+
+  // @media (max-width: 490px) {
+  //   height: 30px;
+  // }
+
+  &__marquee {
+    position: absolute;
+
+    margin: auto auto;
+
+    span {
+      display: inline-block;
+
+      // padding-left: 10%;
+
+      @include mixins.fontTitle();
+
+      text-align: center;
+      font-size: 16px;
+      line-height: 40px;
+      font-style: italic;
+      white-space: nowrap;
+      text-transform: uppercase;
+
+      color: var.$color-text;
+
+      user-select: none;
+
+      animation: marquee 20s linear infinite;
+
+      // @media (max-width: 1200px) {
+      //   font-size: 16px;
+      //   line-height: 46px;
+      // }
+
+      // @media (max-width: 490px) {
+      //   font-size: 16px;
+      //   line-height: 30px;
+      // }
+    }
+
+    &_2 span {
+      margin-left: 100%;
+    }
+
+    // &_isTop {
+    //   span {
+    //     padding-left: 0;
+    //     padding-right: -10%;
+
+    //     animation: marqueeRight 20s linear infinite;
+    //   }
+
+    //   &_2 span {
+    //     margin-left: -100%;
+    //   }
+    // }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}

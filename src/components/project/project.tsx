@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 import { useState } from 'react';
 import classNames from 'classnames';
-import { IProject } from '../../types';
+import { IProject } from 'types';
 import { BoxHoverWrapper } from './box-hover-wrapper';
 import { LinksAndTechs } from './links-and-techs';
-import { useDevice } from '../../hooks/useDevice';
+import { useDevice } from 'hooks';
 import './project.scss';
 
 interface IProps {
@@ -54,7 +54,6 @@ export const Project = ({ project }: IProps) => {
 
           <div>
             {parts.map((part, i) => (
-              // eslint-disable-next-line react/no-array-index-key
               <h4 key={i} className="project__description">
                 {part}
               </h4>

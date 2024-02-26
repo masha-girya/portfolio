@@ -15,5 +15,11 @@ export const PROJECTS_LINKS_CONSTANTS = {
   TODO_GITHUB: 'https://github.com/masha-girya/todo-application',
   BIKE_DEMO: 'https://masha-girya.github.io/bike-landing/',
   BIKE_GITHUB: 'https://github.com/masha-girya/bike-landing',
+  RECIPES_WEB: 'https://thats-what-she-baked.vercel.app/',
+  TODO_DRAG_DEMO: 'https://masha-girya.github.io/incode-test/',
+  TODO_DRAG_GIHUB: 'https://github.com/masha-girya/incode-test',
+  QUIZ_DEMO: 'https://masha-girya.github.io/quiz-test/#/quiz/1',
+  QUIZ_GITHUB: 'https://github.com/masha-girya/quiz-test',
   PORTFOLIO: 'https://masha-girya.github.io/portfolio',
+  CV: 'https://drive.google.com/file/d/1IhTa-_ESST9T4BISmK8Z48nJtCSXBUY6/view?usp=sharing',
 } as const;

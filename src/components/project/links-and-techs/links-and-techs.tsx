@@ -1,5 +1,4 @@
-import { LinkButton } from '../../link-button';
-import { Technologies } from '../../technologies';
+import { LinkButton, Technologies } from 'components';
 import './links-and-techs.scss';
 
 interface IProps {

@@ -1,5 +1,5 @@
-@use '../../../styles/mixins';
-@use '../../../styles/variables' as var;
+@use 'styles/mixins';
+@use 'styles/variables' as var;
 
 .linksAndTechs {
   @include mixins.placeItems(space-between, flex-start);

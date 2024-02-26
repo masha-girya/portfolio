@@ -1,11 +1,40 @@
 export const TECHNOLOGIES_CONSTANTS = {
-  EVO_LANDING: [
-    'React',
-    'Next.js',
+  QUIZ: [
     'Typescript',
+    'React',
     'SCSS Modules',
     'HTML',
+    'React Transition Group',
+    'React Router',
+    'i18next',
+    'React CSV'
   ],
+  TODO_DRAG: [
+    'Typescript',
+    'React',
+    'SCSS Modules',
+    'HTML',
+    'Nest.js',
+    'PostgreSQL',
+    'SQL',
+    'TypeORM',
+    'React beautiful dnd',
+    'Redux',
+  ],
+  RECIPES: [
+    'Typescript',
+    'Next.js',
+    'Swiper',
+    'SCSS Modules',
+    'HTML',
+    'Firebase',
+    'Next API',
+    'Vercel',
+    'Canva',
+    'ESLint',
+    'Redux',
+  ],
+  EVO_LANDING: ['React', 'Next.js', 'Typescript', 'SCSS Modules', 'HTML'],
   LR_WEB: [
     'React',
     'Next.js',
@@ -28,13 +57,7 @@ export const TECHNOLOGIES_CONSTANTS = {
     'React Skeleton',
     'React Transitions',
   ],
-  IXNOME_LANDING: [
-    'React',
-    'Next.js',
-    'Typescript',
-    'SCSS Modules',
-    'HTML',
-  ],
+  IXNOME_LANDING: ['React', 'Next.js', 'Typescript', 'SCSS Modules', 'HTML'],
   IXNOME_APP: [
     'React',
     'Next.js',

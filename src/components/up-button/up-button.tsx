@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { Icon } from '../icon';
+import { Icon } from 'components';
 import './up-button.scss';
 
 export const UpButton = () => {
@@ -8,7 +8,6 @@ export const UpButton = () => {
   }, []);
 
   return (
-    // eslint-disable-next-line jsx-a11y/control-has-associated-label
     <button
       type="button"
       className="up-button"

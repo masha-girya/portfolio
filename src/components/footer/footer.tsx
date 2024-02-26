@@ -1,10 +1,8 @@
-/* eslint-disable max-len */
-import React from 'react';
+import { SideSection } from 'components';
 import {
   PROJECTS_LINKS_CONSTANTS as PROJECTS_LINKS,
   MAIN_TITLE_CONSTANT,
-} from '../../app-constants';
-import { SideSection } from '../side-section';
+} from 'app-constants';
 import './footer.scss';
 
 export const Footer = () => {
