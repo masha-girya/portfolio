@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ee0354f7.css",
-    "main.js": "/portfolio/static/js/main.c4b9905f.js",
+    "main.css": "/portfolio/static/css/main.0042fb46.css",
+    "main.js": "/portfolio/static/js/main.ce21b902.js",
     "static/media/IXNOME-Landing-Mob.png": "/portfolio/static/media/IXNOME-Landing-Mob.8dbc8bae67bf173b1c86.png",
     "static/media/Cafe.png": "/portfolio/static/media/Cafe.10b287e3599a633c11c9.png",
     "static/media/Evo-Play.png": "/portfolio/static/media/Evo-Play.5eb142b07da45d179fb6.png",
     "static/media/LonelyRabbit.png": "/portfolio/static/media/LonelyRabbit.fb1a9df1cafe44c45d88.png",
+    "static/media/RecipesImg.png": "/portfolio/static/media/RecipesImg.6104ba7fe3f13ec9ff0a.png",
+    "static/media/RecipesMobImg.png": "/portfolio/static/media/RecipesMobImg.b7356080aff808083cb1.png",
     "static/media/Evo-Play-Mob.png": "/portfolio/static/media/Evo-Play-Mob.3490f96d572246088e14.png",
     "static/media/Phones.png": "/portfolio/static/media/Phones.a86bbc7307cbc87547fe.png",
     "static/media/Spunch.png": "/portfolio/static/media/Spunch.fba4bad40a8d8bb79aad.png",
@@ -14,11 +16,15 @@
     "static/media/Spunch-Mob.png": "/portfolio/static/media/Spunch-Mob.8a385d3dc2c856c8aa2b.png",
     "static/media/IXNOME-Web-Mob.png": "/portfolio/static/media/IXNOME-Web-Mob.f64934719b98cd7d4f4a.png",
     "static/media/ChuckNorris-Mob.png": "/portfolio/static/media/ChuckNorris-Mob.a5ed5c89fff9a0835851.png",
+    "static/media/QuizImg.png": "/portfolio/static/media/QuizImg.2a71602ce5923ddc0e9f.png",
+    "static/media/QuizMobImg.png": "/portfolio/static/media/QuizMobImg.ccadaf3a3e1348399d69.png",
     "static/media/ToDoApp.png": "/portfolio/static/media/ToDoApp.4650195126aeb1ff7259.png",
+    "static/media/TodoDragImg.png": "/portfolio/static/media/TodoDragImg.3075caf7069e855c4e8c.png",
     "static/media/MavenPro-SemiBold.ttf": "/portfolio/static/media/MavenPro-SemiBold.b059e202b36b97f8436b.ttf",
     "static/media/MavenPro-Bold.ttf": "/portfolio/static/media/MavenPro-Bold.830435f11f7b346a5678.ttf",
     "static/media/MavenPro-Medium.ttf": "/portfolio/static/media/MavenPro-Medium.b598aa7064bdbdbc8b25.ttf",
     "static/media/MavenPro-Regular.ttf": "/portfolio/static/media/MavenPro-Regular.edc66056c3b9c096681d.ttf",
+    "static/media/TodoDragMobImg.png": "/portfolio/static/media/TodoDragMobImg.a54095b5b7500843c968.png",
     "static/media/github.svg": "/portfolio/static/media/github.0200b55c6c174351d03efca737facb31.svg",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.6f1b91869c53777309c967c279c764e9.svg",
     "static/media/noise.svg": "/portfolio/static/media/noise.5ebcb6eff2a5b64b81d85b3303adcc13.svg",
@@ -26,11 +32,11 @@
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.24aa4e168ed85feeca8d3f944408f2db.svg",
-    "main.ee0354f7.css.map": "/portfolio/static/css/main.ee0354f7.css.map",
-    "main.c4b9905f.js.map": "/portfolio/static/js/main.c4b9905f.js.map"
+    "main.0042fb46.css.map": "/portfolio/static/css/main.0042fb46.css.map",
+    "main.ce21b902.js.map": "/portfolio/static/js/main.ce21b902.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee0354f7.css",
-    "static/js/main.c4b9905f.js"
+    "static/css/main.0042fb46.css",
+    "static/js/main.ce21b902.js"
   ]
 }
