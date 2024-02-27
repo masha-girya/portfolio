@@ -16,7 +16,7 @@ export const LinkButton = (props: IProps) => {
       rel="noreferrer"
     >
       <span>{title}</span>
-      <span className="linkButton--underline" />
+      <span className="linkButton__underline" />
     </a>
   );
 };

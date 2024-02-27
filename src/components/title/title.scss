@@ -3,7 +3,7 @@
 
 .titleBlock {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 2;
@@ -22,32 +22,11 @@
     padding: 0 21px;
   }
 
-  &__title {
-    @include mixins.fontTitle();
-
-    color: var.$color-contrast;
-
-    font-size: 82px;
-    line-height: 90px;
-    text-align: center;
-    text-transform: uppercase;
-
+  &__titleText {
     user-select: none;
     pointer-events: none;
 
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-
-    @media (max-width: 1024px) {
-      font-size: 58px;
-      line-height: 63px;
-    }
-
-    @media (max-width: 490px) {
-      max-width: 100%;
-
-      font-size: 34px;
-      line-height: 37px;
-    }
   }
 }

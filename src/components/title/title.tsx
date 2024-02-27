@@ -2,19 +2,17 @@ import { useCallback, useRef } from 'react';
 import './title.scss';
 
 interface IProps {
-  text: string;
+  children: React.ReactNode;
 }
 
-export const Title = ({ text }: IProps) => {
+export const Title = ({ children }: IProps) => {
   const parentRef = useRef<any | null>(null);
   const titleRef = useRef<any | null>(null);
 
   const handleMouseMove = (e: any) => {
     if (parentRef.current && titleRef) {
-      const {
-        width, height, top, left,
-      }
-        = parentRef.current.getBoundingClientRect();
+      const { width, height, top, left } =
+        parentRef.current.getBoundingClientRect();
 
       const { clientX, clientY } = e;
       const moveCoef = 0.2;
@@ -37,9 +35,9 @@ export const Title = ({ text }: IProps) => {
       onMouseLeave={handleMouseLeave}
       ref={parentRef}
     >
-      <h1 className="titleBlock__title" ref={titleRef}>
-        {text}
-      </h1>
+      <div ref={titleRef} className="titleBlock__titleText">
+        {children}
+      </div>
     </div>
   );
 };
