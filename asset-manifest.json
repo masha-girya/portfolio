@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0ef0b646.css",
+    "main.css": "/portfolio/static/css/main.0ebe3f98.css",
     "main.js": "/portfolio/static/js/main.f4c20cec.js",
     "static/media/IXNOME-Landing-Mob.png": "/portfolio/static/media/IXNOME-Landing-Mob.8dbc8bae67bf173b1c86.png",
     "static/media/Cafe.png": "/portfolio/static/media/Cafe.10b287e3599a633c11c9.png",
@@ -11,12 +11,12 @@
     "static/media/Evo-Play-Mob.png": "/portfolio/static/media/Evo-Play-Mob.3490f96d572246088e14.png",
     "static/media/Phones.png": "/portfolio/static/media/Phones.a86bbc7307cbc87547fe.png",
     "static/media/Spunch.png": "/portfolio/static/media/Spunch.fba4bad40a8d8bb79aad.png",
-    "static/media/Avatar.png": "/portfolio/static/media/Avatar.6670e06af592f850543d.png",
     "static/media/Phones-Mob.png": "/portfolio/static/media/Phones-Mob.1d7f214974c573133119.png",
     "static/media/Cafe-Mob.png": "/portfolio/static/media/Cafe-Mob.86ca1b6fe3a5cbc1e5de.png",
-    "static/media/Avatar2.png": "/portfolio/static/media/Avatar2.872bc61f0583b4930589.png",
     "static/media/Spunch-Mob.png": "/portfolio/static/media/Spunch-Mob.8a385d3dc2c856c8aa2b.png",
+    "static/media/Avatar.png": "/portfolio/static/media/Avatar.7281c298e09b94516234.png",
     "static/media/IXNOME-Web-Mob.png": "/portfolio/static/media/IXNOME-Web-Mob.f64934719b98cd7d4f4a.png",
+    "static/media/Avatar2.png": "/portfolio/static/media/Avatar2.976f871c2609065e8023.png",
     "static/media/ChuckNorris-Mob.png": "/portfolio/static/media/ChuckNorris-Mob.a5ed5c89fff9a0835851.png",
     "static/media/QuizImg.png": "/portfolio/static/media/QuizImg.2a71602ce5923ddc0e9f.png",
     "static/media/QuizMobImg.png": "/portfolio/static/media/QuizMobImg.ccadaf3a3e1348399d69.png",
@@ -34,11 +34,11 @@
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.24aa4e168ed85feeca8d3f944408f2db.svg",
-    "main.0ef0b646.css.map": "/portfolio/static/css/main.0ef0b646.css.map",
+    "main.0ebe3f98.css.map": "/portfolio/static/css/main.0ebe3f98.css.map",
     "main.f4c20cec.js.map": "/portfolio/static/js/main.f4c20cec.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ef0b646.css",
+    "static/css/main.0ebe3f98.css",
     "static/js/main.f4c20cec.js"
   ]
 }
