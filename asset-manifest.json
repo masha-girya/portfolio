@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0ebe3f98.css",
-    "main.js": "/portfolio/static/js/main.f4c20cec.js",
+    "main.css": "/portfolio/static/css/main.dd207913.css",
+    "main.js": "/portfolio/static/js/main.11c70c9c.js",
     "static/media/IXNOME-Landing-Mob.png": "/portfolio/static/media/IXNOME-Landing-Mob.8dbc8bae67bf173b1c86.png",
     "static/media/Cafe.png": "/portfolio/static/media/Cafe.10b287e3599a633c11c9.png",
     "static/media/Evo-Play.png": "/portfolio/static/media/Evo-Play.5eb142b07da45d179fb6.png",
@@ -34,11 +34,11 @@
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.24aa4e168ed85feeca8d3f944408f2db.svg",
-    "main.0ebe3f98.css.map": "/portfolio/static/css/main.0ebe3f98.css.map",
-    "main.f4c20cec.js.map": "/portfolio/static/js/main.f4c20cec.js.map"
+    "main.dd207913.css.map": "/portfolio/static/css/main.dd207913.css.map",
+    "main.11c70c9c.js.map": "/portfolio/static/js/main.11c70c9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ebe3f98.css",
-    "static/js/main.f4c20cec.js"
+    "static/css/main.dd207913.css",
+    "static/js/main.11c70c9c.js"
   ]
 }
