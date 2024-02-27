@@ -2,18 +2,11 @@
 @use 'styles/variables' as var;
 
 .project {
-  top: 0;
   display: flex;
-  
-  &__static {
-    position: relative;
-    display: flex;
-    gap: 50px;
-    height: max-content;
-  
-    @media (max-width: 769px) {
-      display: block;
-    }
+  gap: 50px;
+
+  @media (max-width: 769px) {
+    display: block;
   }
 
   &__box {
@@ -24,7 +17,7 @@
     justify-content: space-between;
 
     margin: 0 20px;
-    width: 50%;
+    min-width: 50%;
     min-height: 400px;
     height: max-content;
     padding: 50px 80px;
@@ -36,29 +29,29 @@
       position: absolute;
       top: -9px;
       left: 11px;
-  
+
       width: calc(100% - 1px);
       height: calc(100% - 1px);
       overflow: hidden;
-  
+
       @include mixins.boxAnimation();
-  
+
       cursor: pointer;
-  
+
       &__image {
         width: 100%;
         height: 100%;
-  
+
         object-fit: cover;
         object-position: top center;
-  
+
         transform: translate(-100%, 100%);
-        transition: transform .6s cubic-bezier(0, 0.55, 0.45, 1);
+        transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
 
         &_leftPosition {
           object-position: top left;
         }
-  
+
         &_active {
           transform: translate(0, 0);
         }
@@ -66,7 +59,7 @@
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: 0;
       top: -10px;
@@ -101,7 +94,6 @@
       margin-left: 0;
     }
 
-
     @media (max-width: 490px) {
       padding: 20px 30px 35px;
       margin-bottom: 25px;
@@ -109,6 +101,16 @@
       &:hover::before {
         transform: translate(0, 0);
       }
+    }
+  }
+
+  &__links {
+    min-width: 40%;
+    margin-left: 30px;
+
+    @media (max-width: 769px) {
+      width: 100%;
+      margin-left: 0;
     }
   }
 

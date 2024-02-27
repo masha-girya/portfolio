@@ -4,14 +4,7 @@
 .linksAndTechs {
   @include mixins.placeItems(space-between, flex-start);
   flex-direction: column;
-  
-  margin-left: 30px;
-  width: 40%;
-
-  @media (max-width: 769px) {
-    width: 100%;
-    margin-left: 0;
-  }
+  height: 100%;
 
   &__tech {
     &__title {

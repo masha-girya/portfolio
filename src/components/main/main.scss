@@ -2,6 +2,8 @@
 @use 'styles/variables' as var;
 
 .main {
+  overflow-x: hidden;
+
   &__gradientBox {
     position: relative;
     z-index: var.$index-main;
@@ -12,7 +14,7 @@
     width: 100%;
     margin: 0 auto 190px;
     padding-bottom: 20px;
-  
+
     @media (max-width: 600px) {
       margin-bottom: 220px;
     }

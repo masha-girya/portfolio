@@ -4,10 +4,12 @@ import Avatar from './assets/Avatar.png';
 import './header.scss';
 
 export const Header = () => {
+
   return (
     <div className="header">
-      <img src={Avatar} alt="Avatar" className="header__avatar" />
-      <div className='header__titleBox'>
+      {/* <img src={Avatar} alt="Avatar" className="header__avatar" /> */}
+      <div className="header__avatar" />
+      <div className="header__titleBox">
         <Title>
           <>
             <h1 className="header__title">Hi, I am Maria Girya!</h1>
