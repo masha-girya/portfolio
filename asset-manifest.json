@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0042fb46.css",
-    "main.js": "/portfolio/static/js/main.ce21b902.js",
+    "main.css": "/portfolio/static/css/main.79dc06de.css",
+    "main.js": "/portfolio/static/js/main.2b9df316.js",
     "static/media/IXNOME-Landing-Mob.png": "/portfolio/static/media/IXNOME-Landing-Mob.8dbc8bae67bf173b1c86.png",
     "static/media/Cafe.png": "/portfolio/static/media/Cafe.10b287e3599a633c11c9.png",
     "static/media/Evo-Play.png": "/portfolio/static/media/Evo-Play.5eb142b07da45d179fb6.png",
@@ -11,6 +11,7 @@
     "static/media/Evo-Play-Mob.png": "/portfolio/static/media/Evo-Play-Mob.3490f96d572246088e14.png",
     "static/media/Phones.png": "/portfolio/static/media/Phones.a86bbc7307cbc87547fe.png",
     "static/media/Spunch.png": "/portfolio/static/media/Spunch.fba4bad40a8d8bb79aad.png",
+    "static/media/Avatar.png": "/portfolio/static/media/Avatar.6670e06af592f850543d.png",
     "static/media/Phones-Mob.png": "/portfolio/static/media/Phones-Mob.1d7f214974c573133119.png",
     "static/media/Cafe-Mob.png": "/portfolio/static/media/Cafe-Mob.86ca1b6fe3a5cbc1e5de.png",
     "static/media/Spunch-Mob.png": "/portfolio/static/media/Spunch-Mob.8a385d3dc2c856c8aa2b.png",
@@ -32,11 +33,11 @@
     "static/media/gmail.svg": "/portfolio/static/media/gmail.ad088eb9950c056b79e44b703493b771.svg",
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.24aa4e168ed85feeca8d3f944408f2db.svg",
-    "main.0042fb46.css.map": "/portfolio/static/css/main.0042fb46.css.map",
-    "main.ce21b902.js.map": "/portfolio/static/js/main.ce21b902.js.map"
+    "main.79dc06de.css.map": "/portfolio/static/css/main.79dc06de.css.map",
+    "main.2b9df316.js.map": "/portfolio/static/js/main.2b9df316.js.map"
   },
   "entrypoints": [
-    "static/css/main.0042fb46.css",
-    "static/js/main.ce21b902.js"
+    "static/css/main.79dc06de.css",
+    "static/js/main.2b9df316.js"
   ]
 }
